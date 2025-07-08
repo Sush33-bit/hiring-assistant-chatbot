@@ -1,16 +1,33 @@
-# 🤖 Gemini-based AI Hiring Assistant
+# 🤖 AI Hiring Assistant Chatbot
 
-A smart chatbot to screen tech candidates. Built with Streamlit + Gemini API.
+This is an AI-powered Hiring Assistant chatbot built for TalentScout that screens candidates based on their tech stack and generates custom technical interview questions using Gemini (`gemini-1.5-flash`).
 
-## Features
-- Collect candidate info
-- Generate tech interview questions from declared stack
-- Context-aware chat interface
+---
 
-## Run Locally
+## 🚀 Features
+
+- Collects candidate details (Name, Email, Phone, Experience, Tech Stack)
+- Uses **Google Gemini (`gemini-1.5-flash`)** to generate 3–5 tailored technical questions
+- Clean and simple **Streamlit UI**
+- Graceful greeting, fallback, and conversation end
+- Modular code using Python files: `app.py`, `logic.py`, `prompts.py`
+- Secure `.env` key handling using `python-dotenv`
+
+---
+
+## 🛠 Tech Stack
+
+- Python
+- Streamlit
+- Google Gemini (`gemini-1.5-flash`)
+- `google-generativeai` SDK
+- `python-dotenv` for secure key handling
+
+---
+
+## ⚙️ How to Run the Project
+
+### 1. Clone the repository
 ```bash
-git clone <your_repo>
+git clone https://github.com/Sush33-bit/hiring-assistant-chatbot.git
 cd hiring-assistant-chatbot
-pip install -r requirements.txt
-touch .env  # add your API key here
-streamlit run app.py
